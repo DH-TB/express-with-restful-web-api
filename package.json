@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "debug": "DEBUG=express-with-restful-web-api:* npm start"
+    "debug": "DEBUG=express-with-restful-web-api:* npm start",
+    "test": "jasmine",
+    "itest": "jasmine spec/integration-tests/*[sS]pec.js",
+    "utest": "jasmine spec/unit-tests/*[sS]pec.js"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
